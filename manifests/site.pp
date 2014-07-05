@@ -57,6 +57,9 @@ node default {
   include git
   include hub
   include nginx
+ 
+  #Additional
+  include java
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -82,6 +85,20 @@ node default {
       'findutils',
       'gnu-tar'
     ]:
+  }
+
+  #Intellij
+  class intellij($edition='community', $version='13.1.3') {
+    case $edition {
+      'community': { $edition_real = 'IC' }
+      'ultimate': { $edition_real = 'IU' }
+      default: { fail('Class[intellij]: parameter edition must be community or ultimate') }
+    }
+  
+    package { "IntelliJ-IDEA-${edition_real}-${version}":
+      provider => 'appdmg_eula',
+      source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
+    }
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
