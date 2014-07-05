@@ -49,6 +49,11 @@ Service {
   provider => ghlaunchd
 }
 
+#ruby
+class { 'ruby::global':
+  version => '2.1.2'
+}
+
 #Intellij
 class intellij($edition='community', $version='13.1.3') {
   case $edition {
@@ -73,8 +78,9 @@ node default {
   include nginx
  
   #Additional
-  include java
+  #include java
   include onepassword
+  include ruby
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
