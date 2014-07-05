@@ -60,6 +60,7 @@ node default {
  
   #Additional
   include java
+  include onepassword
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {

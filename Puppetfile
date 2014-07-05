@@ -63,3 +63,4 @@ github "xquartz",     "1.2.1"
 #
 github "intellij",    "1.5.1"
 github "java",        "1.5.0"
+github "onepassword", "1.1.2"
