@@ -49,6 +49,20 @@ Service {
   provider => ghlaunchd
 }
 
+#Intellij
+class intellij($edition='community', $version='13.1.3') {
+  case $edition {
+    'community': { $edition_real = 'IC' }
+    'ultimate': { $edition_real = 'IU' }
+    default: { fail('Class[intellij]: parameter edition must be community or ultimate') }
+  }
+
+  package { "IntelliJ-IDEA-${edition_real}-${version}":
+    provider => 'appdmg_eula',
+    source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
+  }
+}
+
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
@@ -88,19 +102,6 @@ node default {
     ]:
   }
 
-  #Intellij
-  class intellij($edition='community', $version='13.1.3') {
-    case $edition {
-      'community': { $edition_real = 'IC' }
-      'ultimate': { $edition_real = 'IU' }
-      default: { fail('Class[intellij]: parameter edition must be community or ultimate') }
-    }
-  
-    package { "IntelliJ-IDEA-${edition_real}-${version}":
-      provider => 'appdmg_eula',
-      source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
-    }
-  }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
