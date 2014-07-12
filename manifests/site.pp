@@ -81,6 +81,9 @@ node default {
   #include java
   include onepassword
   include ruby
+  
+  # Custom Setup
+  include mybashconfig	
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
