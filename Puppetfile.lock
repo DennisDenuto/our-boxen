@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: DennisDenuto/puppet-common-scripts
+  specs:
+    common-scripts (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.10.2)
@@ -122,6 +127,7 @@ DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
   dnsmasq (= 2.0.1)
+  common-scripts (= 1.0.0)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.5)
