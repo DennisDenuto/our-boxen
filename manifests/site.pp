@@ -54,6 +54,7 @@ class { 'ruby::global':
   version => '2.1.2'
 }
 
+
 #Intellij
 class intellij($edition='community', $version='13.1.3') {
   case $edition {
@@ -67,6 +68,7 @@ class intellij($edition='community', $version='13.1.3') {
     source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
   }
 }
+
 
 Homebrew::Formula <| |> -> Package <| |>
 
@@ -85,6 +87,11 @@ node default {
   # Custom Setup
   include mybashconfig	
 
+#my config
+ class {'mybashconfig':
+      username => '$id',
+    }
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -100,7 +107,7 @@ node default {
   ruby::version { '2.0.0': }
   ruby::version { '2.1.0': }
   ruby::version { '2.1.1': }
-  ruby::version { '2.1.2': }
+  #ruby::version { '2.1.2': }
 
   # common, useful packages
   package {
