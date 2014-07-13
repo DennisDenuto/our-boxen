@@ -55,19 +55,6 @@ class { 'ruby::global':
 }
 
 
-#Intellij
-class intellij($edition='community', $version='13.1.3') {
-  case $edition {
-    'community': { $edition_real = 'IC' }
-    'ultimate': { $edition_real = 'IU' }
-    default: { fail('Class[intellij]: parameter edition must be community or ultimate') }
-  }
-
-  package { "IntelliJ-IDEA-${edition_real}-${version}":
-    provider => 'appdmg_eula',
-    source   => "http://download.jetbrains.com/idea/idea${edition_real}-${version}.dmg",
-  }
-}
 
 
 Homebrew::Formula <| |> -> Package <| |>
@@ -78,19 +65,68 @@ node default {
   include git
   include hub
   include nginx
+
+  # additional (core) modules
+  include iterm2::dev
+  include zsh
+  include autojump
+  include tmux
+  include wget
+
+
  
   #Additional
   #include java
   include onepassword
   include ruby
+  include chrome
+  include chrome::dev
+  include dropbox
+  include virtualbox
+  include vagrant
   
-  # Custom Setup
-  include mybashconfig	
+  package { 'mercurial': }
+  package { 'vim':
+    require         => Package[mercurial],
+    install_options => [
+      '--with-cscope',
+      '--override-system-vim',
+      '--enable-pythoninterp'
+    ]
+  }
+  package { 'macvim':
+    install_options => [
+      '--with-cscope',
+    ]
+  }
 
-#my config
- class {'mybashconfig':
-      username => '$id',
-    }
+  #Intellij
+  class {'intellij':
+         edition => 'community',
+         version => '13.1.3'
+  }
+
+  # My Config
+  class {'common-scripts':
+       username => "${::boxen_user}",
+  }
+
+  # additional homebrew packages
+  package {
+    [
+      'ledger',
+      'tree',
+      'ssh-copy-id',
+      'tig',
+      'ctags-exuberant',
+      'direnv',
+      'git-flow',
+      'git-extras',
+      'docker',
+      'boot2docker',
+      'grc'
+    ]:
+  }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {

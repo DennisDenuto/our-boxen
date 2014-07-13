@@ -64,4 +64,18 @@ github "xquartz",     "1.2.1"
 github "intellij",    "1.5.1"
 github "java",        "1.5.0"
 github "onepassword", "1.1.2"
-github "common-scripts", "1.0.0", :repo => "DennisDenuto/puppet-common-scripts"
+github "common-scripts", "1.0.1", :repo => "DennisDenuto/puppet-common-scripts"
+
+github "iterm2",      "1.0.3"
+github "emacs",       "1.1.0"
+github "zsh",         "1.0.0"
+github "autojump",    "1.0.0"
+github "tmux",        "1.0.2"
+github "wget",        "1.0.0"
+
+github "chrome",      "1.1.1"
+
+github "dropbox",     "1.1.1"
+
+github "virtualbox",  "1.0.10"
+github "vagrant",     "3.0.4"
