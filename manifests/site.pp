@@ -117,6 +117,7 @@ exec { "set-ohmyzsh-config-zshrc":
   class {'common-scripts':
        username => "${::boxen_user}",
   }
+  include limechat
 
   # additional homebrew packages
   package {
