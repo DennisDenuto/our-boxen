@@ -76,6 +76,10 @@ exec { "set-ohmyzsh-config-zshrc":
     path    => "/usr/local/bin/:/bin/",
 }
 
+exec { "set-boxen-path-to-zshrc":
+    command => "echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> /Users/${::boxen_user}/.zshrc"
+    path    => "/usr/local/bin/:/bin/",
+}
   include autojump
   include tmux
   include wget
@@ -112,6 +116,9 @@ exec { "set-ohmyzsh-config-zshrc":
          edition => 'ultimate',
          version => '13.1.3'
   }
+
+  # Maven
+  include maven
 
   # My Config
   class {'common-scripts':
