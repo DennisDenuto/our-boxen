@@ -1,7 +1,8 @@
 #!/bin/bash
+
 cat <<EOF
 Please README
-Boxen requires at least the Xcode Command Line Tools installed.
+Boxen requires at least the Xcode Command Line Tools installed.(xcode-select --install)
 Boxen will not work with an existing rvm install.
 Boxen may not play nice with a GitHub username that includes dash(-)
 Boxen may not play nice with an existing rbenv install.
@@ -24,6 +25,7 @@ if [ $answer == "n" ]; then
 fi
 
 USER=$1
+xcode-select --install
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/DennisDenuto/our-boxen /opt/boxen/repo
