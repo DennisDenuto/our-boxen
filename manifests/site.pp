@@ -77,7 +77,12 @@ exec { "set-ohmyzsh-config-zshrc":
 }
 
 exec { "set-boxen-path-to-zshrc":
-    command => "echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> /Users/${::boxen_user}/.zshrc"
+    command => "echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> /Users/${::boxen_user}/.zshrc",
+    path    => "/usr/local/bin/:/bin/",
+}
+
+exec { "set-custom-modules-to-zshrc":
+    command => "/usr/bin/sed -i bak 's/plugins=(git)/plugins=(git codecompletions)/'  /Users/${::boxen_user}/.zshrc",
     path    => "/usr/local/bin/:/bin/",
 }
   include autojump
