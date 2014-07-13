@@ -109,7 +109,7 @@ exec { "set-ohmyzsh-config-zshrc":
 
   #Intellij
   class {'intellij':
-         edition => 'community',
+         edition => 'ultimate',
          version => '13.1.3'
   }
 
