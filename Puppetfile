@@ -68,6 +68,10 @@ github "common-scripts", "1.0.1", :repo => "DennisDenuto/puppet-common-scripts"
 
 github "iterm2",      "1.0.3"
 github "emacs",       "1.1.0"
+github "osx",         "1.6.0"
+
+
+github "ohmyzsh",         "0.0.1", :repo => "DennisDenuto/puppet-ohmyzsh"
 github "zsh",         "1.0.0"
 github "autojump",    "1.0.0"
 github "tmux",        "1.0.2"

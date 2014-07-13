@@ -4,6 +4,16 @@ GITHUBTARBALL
     common-scripts (1.0.1)
 
 GITHUBTARBALL
+  remote: DennisDenuto/puppet-ohmyzsh
+  specs:
+    ohmyzsh (0.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-autojump
+  specs:
+    autojump (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.10.2)
@@ -14,9 +24,24 @@ GITHUBTARBALL
     brewcask (0.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-emacs
+  specs:
+    emacs (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -54,6 +79,11 @@ GITHUBTARBALL
     intellij (1.5.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
     java (1.5.0)
@@ -77,6 +107,11 @@ GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -104,9 +139,34 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.0.4)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.10)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -129,6 +189,10 @@ DEPENDENCIES
   dnsmasq (= 2.0.1)
   common-scripts (= 1.0.0)
   common-scripts (= 1.0.1)
+  autojump (= 1.0.0)
+  chrome (= 1.1.1)
+  dropbox (= 1.1.1)
+  emacs (= 1.1.0)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.5)
@@ -140,9 +204,13 @@ DEPENDENCIES
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
   intellij (= 1.5.1)
+  iterm2 (= 1.0.3)
   java (= 1.5.0)
+  module-data (= 0.0.3)
+  ohmyzsh (= 0.0.1)
   onepassword (= 1.1.2)
   openssl (= 1.0.0)
+  osx (= 1.6.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
@@ -150,4 +218,8 @@ DEPENDENCIES
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
   xquartz (= 1.2.1)
-
+  tmux (= 1.0.2)
+  vagrant (= 3.0.4)
+  virtualbox (= 1.0.10)
+  wget (= 1.0.0)
+  zsh (= 1.0.0)

@@ -69,6 +69,13 @@ node default {
   # additional (core) modules
   include iterm2::dev
   include zsh
+  include ohmyzsh
+
+exec { "set-ohmyzsh-config-zshrc":
+    command => "cp -f /Users/${::boxen_user}/.oh-my-zsh/templates/zshrc.zsh-template /Users/${::boxen_user}/.zshrc",
+    path    => "/usr/local/bin/:/bin/",
+}
+
   include autojump
   include tmux
   include wget
