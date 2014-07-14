@@ -62,7 +62,7 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 #
 github "intellij",    "1.5.1"
-github "java",        "1.5.0"
+github "java",        "1.6.0", :repo => "DennisDenuto/puppet-java"
 github "onepassword", "1.1.2"
 github "common-scripts", "1.0.1", :repo => "DennisDenuto/puppet-common-scripts"
 
@@ -85,3 +85,4 @@ github "dropbox",     "1.1.1"
 
 github "virtualbox",  "1.0.10"
 github "vagrant",     "3.0.4"
+github "android",     "1.3.0"

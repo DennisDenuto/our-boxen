@@ -100,6 +100,19 @@ exec { "set-custom-modules-to-zshrc":
   include dropbox
   include virtualbox
   include vagrant
+
+#android
+include android::sdk
+include android::ndk
+include android::tools
+include android::platform_tools
+android::build_tools { '18.1.1': }
+include android::17
+include android::18
+include android::19
+include android::20
+android::system_image { 'sysimg-18': }
+include android::doc
   
   package { 'mercurial': }
   package { 'vim':
