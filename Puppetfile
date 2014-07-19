@@ -71,7 +71,7 @@ github "emacs",       "1.1.0"
 github "osx",         "1.6.0"
 
 
-github "ohmyzsh",         "0.0.1", :repo => "DennisDenuto/puppet-ohmyzsh"
+github "ohmyzsh",         "0.0.2", :repo => "DennisDenuto/puppet-ohmyzsh"
 github "limechat",         "1.1.0", :repo => "DennisDenuto/puppet-limechat"
 github "maven",         "1.0.7", :repo => "DennisDenuto/puppet-maven"
 github "gvm",         "1.0.1", :repo => "DennisDenuto/puppet-gvm"
