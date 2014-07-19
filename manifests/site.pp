@@ -81,6 +81,11 @@ exec { "set-boxen-path-to-zshrc":
     path    => "/usr/local/bin/:/bin/",
 }
 
+exec { "set-gvm-path-to-zshrc":
+    command => "echo '[[ -s \"/Users/${::boxen_user}/.gvm/bin/gvm-init.sh\" ]] && source \"/Users/${::boxen_user}/.gvm/bin/gvm-init.sh\"' >> /Users/${::boxen_user}/.zshrc",
+    path    => "/usr/local/bin/:/bin/",
+}
+
 exec { "set-custom-modules-to-zshrc":
     command => "/usr/bin/sed -i bak 's/plugins=(git)/plugins=(git codecompletions)/'  /Users/${::boxen_user}/.zshrc",
     path    => "/usr/local/bin/:/bin/",
