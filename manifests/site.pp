@@ -87,7 +87,7 @@ exec { "set-gvm-path-to-zshrc":
 }
 
 exec { "set-custom-modules-to-zshrc":
-    command => "/usr/bin/sed -i bak 's/plugins=(git)/plugins=(git codecompletions)/'  /Users/${::boxen_user}/.zshrc",
+    command => "/usr/bin/sed -i bak 's/plugins=(git)/plugins=(git codecompletions mvn)/'  /Users/${::boxen_user}/.zshrc",
     path    => "/usr/local/bin/:/bin/",
 }
   include autojump
@@ -142,6 +142,9 @@ include android::doc
 
   # Maven
   include maven
+
+  # Moom
+  class { 'moom': }
 
   # gvm
   include gvm
