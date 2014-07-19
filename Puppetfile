@@ -66,7 +66,7 @@ github "java",        "1.6.1", :repo => "DennisDenuto/puppet-java"
 github "onepassword", "1.1.2"
 github "common-scripts", "1.0.1", :repo => "DennisDenuto/puppet-common-scripts"
 
-github "iterm2",      "1.0.3"
+github "iterm2",      "1.1.3", :repo => "DennisDenuto/puppet-iterm2"
 github "emacs",       "1.1.0"
 github "osx",         "1.6.0"
 
