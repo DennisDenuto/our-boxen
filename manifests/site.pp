@@ -149,6 +149,16 @@ include android::doc
   class {'common-scripts':
        username => "${::boxen_user}",
   }
+
+  # vim pathogen setup
+  common-scripts::vim-bundle { [
+    'altercation/vim-colors-solarized'
+  ]: }
+  file { "${vim::vimrc}": ensure => exists }
+  common-scripts::vim-loader{'vim-loader': }
+
+
+  # limechat
   include limechat
 
   # additional homebrew packages
