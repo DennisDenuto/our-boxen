@@ -78,7 +78,8 @@ github "gvm",         "1.0.1", :repo => "DennisDenuto/puppet-gvm"
 github "moom",         "0.1.6", :repo => "DennisDenuto/puppet-moom"
 github "zsh",         "1.0.0"
 github "autojump",    "1.0.0"
-github "tmux",        "1.0.2"
+github "tmux",        "0.0.1", :repo => "DennisDenuto/puppet-tmux"
+
 github "wget",        "1.0.0"
 
 github "chrome",      "1.1.1"
