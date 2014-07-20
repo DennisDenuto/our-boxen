@@ -106,6 +106,9 @@ android::system_image { 'sysimg-18': }
 include android::doc
   
   package { 'mercurial': }
+ 
+  #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+  package { 'reattach-to-user-namespace': }
 
   package { 'macvim':
     install_options => [
