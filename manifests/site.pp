@@ -106,17 +106,11 @@ android::system_image { 'sysimg-18': }
 include android::doc
   
   package { 'mercurial': }
-  package { 'vim':
-    require         => Package[mercurial],
-    install_options => [
-      '--with-cscope',
-      '--override-system-vim',
-      '--enable-pythoninterp'
-    ]
-  }
+
   package { 'macvim':
     install_options => [
       '--with-cscope',
+      '--override-system-vim',
     ]
   }
 
@@ -149,13 +143,6 @@ include android::doc
   class {'common-scripts':
        username => "${::boxen_user}",
   }
-
-  # vim pathogen setup
-  common-scripts::vim-bundle { [
-    'altercation/vim-colors-solarized'
-  ]: }
-  file { "${vim::vimrc}": ensure => exists }
-  common-scripts::vim-loader{'vim-loader': }
 
 
   # limechat
