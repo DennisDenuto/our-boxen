@@ -150,6 +150,10 @@ include android::doc
 
   # limechat
   include limechat
+  
+  # mysql
+  include mysql
+  mysql::db { 'development_db': }
 
   # additional homebrew packages
   package {
