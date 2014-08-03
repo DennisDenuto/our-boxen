@@ -110,6 +110,10 @@ include android::doc
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
 
+  package { "s3cmd":
+    ensure => present
+  }
+
   package { 'macvim':
     install_options => [
       '--with-cscope',
