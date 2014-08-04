@@ -110,6 +110,8 @@ include android::doc
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
 
+  package { 'spark': }
+
   package { "s3cmd":
     ensure => present
   }
@@ -156,8 +158,8 @@ include android::doc
   include limechat
   
   # mysql
-  include mysql
-  mysql::db { 'development_db': }
+#  include mysql
+#  mysql::db { 'development_db': }
 
   # additional homebrew packages
   package {
