@@ -133,9 +133,6 @@ include android::doc
   # Maven
   include maven
 
-  # Moom
-  class { 'moom': }
-
   # gvm
   include gvm
   gvm::groovy { '2.2.2': 
