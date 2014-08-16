@@ -60,6 +60,9 @@ class { 'ruby::global':
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+
+  homebrew::tap { 'homebrew/binary': }
+
   # core modules, needed for most things
   include dnsmasq
   include git
@@ -70,6 +73,7 @@ node default {
   include iterm2::dev
   include zsh
   include ohmyzsh
+
 
 exec { "set-ohmyzsh-config-zshrc":
     command => "cp -f /Users/${::boxen_user}/.oh-my-zsh/templates/zshrc.zsh-template /Users/${::boxen_user}/.zshrc",
@@ -116,6 +120,8 @@ include android::doc
   package { "s3cmd":
     ensure => present
   }
+
+  package { 'packer': }
 
   package { 'macvim':
     install_options => [
