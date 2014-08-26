@@ -111,6 +111,7 @@ android::system_image { 'sysimg-18': }
 include android::doc
   
   package { 'scala': }
+  package { 'sbt': }
   package { 'mercurial': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
