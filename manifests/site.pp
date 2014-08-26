@@ -95,6 +95,7 @@ exec { "set-ohmyzsh-config-zshrc":
   include dropbox
   include virtualbox
   include vagrant
+  include vmware_fusion
 
 #android
 include android::sdk
