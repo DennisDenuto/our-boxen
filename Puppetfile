@@ -83,6 +83,7 @@ github "tmux",        "0.0.2", :repo => "DennisDenuto/puppet-tmux"
 github "wget",        "1.0.0"
 
 github "chrome",      "1.1.1"
+github "firefox",      "1.2.2"
 
 github "dropbox",     "1.1.1"
 

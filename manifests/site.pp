@@ -91,6 +91,7 @@ exec { "set-ohmyzsh-config-zshrc":
   include onepassword
   include ruby
   include chrome
+  include firefox
   include chrome::dev
   include dropbox
   include virtualbox
