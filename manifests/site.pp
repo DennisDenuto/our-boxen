@@ -114,6 +114,8 @@ include android::doc
   package { 'scala': }
   package { 'sbt': }
   package { 'mercurial': }
+  #jad = decompiler
+  package { 'jad': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
@@ -194,6 +196,11 @@ include android::doc
   nodejs::version { 'v0.6': }
   nodejs::version { 'v0.8': }
   nodejs::version { 'v0.10': }
+
+  # install some npm modules
+   nodejs::module { 'appium': 
+    node_version => 'v0.10'
+  }
 
   # default ruby versions
   ruby::version { '1.9.3': }
