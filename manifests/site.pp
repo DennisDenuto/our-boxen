@@ -116,6 +116,7 @@ include android::doc
   package { 'mercurial': }
   #jad = decompiler
   package { 'jad': }
+  package { 'mtr': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
