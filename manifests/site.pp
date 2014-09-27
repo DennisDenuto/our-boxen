@@ -117,7 +117,6 @@ include android::doc
   #jad = decompiler
   package { 'jad': }
   package { 'mtr': }
-  package { 'rpm': }
   package { 'git-annex': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
