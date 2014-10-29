@@ -104,6 +104,9 @@ include android::ndk
 include android::tools
 include android::platform_tools
 android::build_tools { '18.1.1': }
+android::build_tools { '20': }
+android::build_tools { '21': }
+android::build_tools { '21.0.1': }
 include android::17
 include android::18
 include android::19
