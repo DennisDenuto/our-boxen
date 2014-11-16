@@ -205,7 +205,10 @@ include android::doc
   nodejs::version { 'v0.10': }
 
   # install some npm modules
-   nodejs::module { 'appium': 
+   nodejs::module { 'appium':
+    node_version => 'v0.10'
+  }
+   nodejs::module { 'jsonlint':
     node_version => 'v0.10'
   }
 
