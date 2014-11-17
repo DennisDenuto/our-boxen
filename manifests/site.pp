@@ -129,6 +129,8 @@ include android::doc
   package { 'mtr': }
   package { 'git-annex': }
   package { 'nmap': }
+
+  package { 'chrome-cli': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
