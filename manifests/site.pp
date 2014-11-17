@@ -95,8 +95,14 @@ exec { "set-ohmyzsh-config-zshrc":
   include chrome::dev
   include dropbox
   include virtualbox
-  include vagrant
   include vmware_fusion
+  #vagrant setup
+  class { 'vagrant':
+    completion => true
+    }
+  vagrant::plugin { 'vagrant-vmware-fusion':
+    license => 'puppet:///modules/people/joe/licenses/fusion.lic',
+  }
 
 #android
 include android::sdk
