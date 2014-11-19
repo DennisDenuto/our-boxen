@@ -85,11 +85,18 @@ exec { "set-ohmyzsh-config-zshrc":
   include wget
 
 
- 
   #Additional
   #include java
   include onepassword
   include ruby
+  include python
+  exec { 'install aws cli':
+    user    => 'root',
+    command => "${boxen::config::home}/homebrew/bin/pip install awscli",
+    creates => '/usr/local/bin/aws',
+    onlyif  => 'test ! -f /usr/local/bin/aws'
+  }
+
   include chrome
   include firefox
   include chrome::dev
@@ -131,6 +138,7 @@ include android::doc
   package { 'nmap': }
 
   package { 'chrome-cli': }
+  package { 'openvpn': }
  
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
