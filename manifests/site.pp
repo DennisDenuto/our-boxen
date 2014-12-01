@@ -90,12 +90,7 @@ exec { "set-ohmyzsh-config-zshrc":
   include onepassword
   include ruby
   include python
-  exec { 'install aws cli':
-    user    => 'root',
-    command => "${boxen::config::home}/homebrew/bin/pip install awscli",
-    creates => '/usr/local/bin/aws',
-    onlyif  => 'test ! -f /usr/local/bin/aws'
-  }
+  package { 'awscli': }
 
   include chrome
   include firefox
