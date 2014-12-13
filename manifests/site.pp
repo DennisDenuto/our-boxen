@@ -88,6 +88,7 @@ exec { "set-ohmyzsh-config-zshrc":
   #Additional
   #include java
   include onepassword
+  include onepassword::chrome
   include ruby
   include python
   package { 'awscli': }
@@ -98,6 +99,9 @@ exec { "set-ohmyzsh-config-zshrc":
   include dropbox
   include virtualbox
   include vmware_fusion
+
+  package { 'typesafe-activator': }
+
   #vagrant setup
   class { 'vagrant':
     completion => true
