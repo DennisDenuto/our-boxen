@@ -160,7 +160,7 @@ include android::doc
   #Intellij
   class {'intellij':
          edition => 'ultimate',
-         version => '13.1.3'
+         version => '14.0.2'
   }
 
   # Maven
@@ -224,6 +224,9 @@ include android::doc
     node_version => 'v0.10'
   }
    nodejs::module { 'jsonlint':
+    node_version => 'v0.10'
+  }
+   nodejs::module { 'bower': 
     node_version => 'v0.10'
   }
 
