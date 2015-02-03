@@ -92,13 +92,16 @@ exec { "set-ohmyzsh-config-zshrc":
   include ruby
   include python
   package { 'awscli': }
+  package { 'hg': }
 
   include chrome
   include firefox
   include chrome::dev
   include dropbox
   include virtualbox
-  include vmware_fusion
+
+  class { 'vmware_fusion': version => '7.0.0-2103067' }
+  #license: QZKH1-G1PNZ-44JWD-2U4G1-VC533
 
   package { 'typesafe-activator': }
 
@@ -106,9 +109,9 @@ exec { "set-ohmyzsh-config-zshrc":
   class { 'vagrant':
     completion => true
     }
-  vagrant::plugin { 'vagrant-vmware-fusion':
-    license => 'puppet:///modules/people/joe/licenses/fusion.lic',
-  }
+  #vagrant::plugin { 'vagrant-vmware-fusion':
+  #  license => 'puppet:///modules/people/joe/licenses/fusion.lic',
+  #}
 
 #android
 include android::sdk
@@ -160,7 +163,7 @@ include android::doc
   #Intellij
   class {'intellij':
          edition => 'ultimate',
-         version => '14.0.2'
+         version => '14.0.3'
   }
 
   # Maven
