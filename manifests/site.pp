@@ -128,6 +128,7 @@ include android::19
 include android::20
 android::system_image { 'sysimg-18': }
 include android::doc
+include android::studio
   
   package { 'sudolikeaboss': }
   package { 'scala': }
