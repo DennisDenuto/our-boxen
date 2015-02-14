@@ -90,6 +90,6 @@ github "dropbox",     "1.1.1"
 
 github "virtualbox",  "1.0.10"
 github "vagrant",     "3.2.0"
-github "android",     "1.3.1"
+github "android",     "1.4.0"
 github "vmware_fusion",     "1.2.0"
 #github "mysql", "1.99.15"
