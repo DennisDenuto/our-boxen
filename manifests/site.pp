@@ -66,7 +66,6 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include watch
   include hub
   include nginx
 
