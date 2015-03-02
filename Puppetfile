@@ -17,7 +17,11 @@ def github(name, *args)
   else
     version = args.first
     options[:repo] ||= "boxen/puppet-#{name}"
-    mod name, version, :github_tarball => options[:repo]
+    if version == "master"
+        mod name, :github_tarball => options[:repo]
+    else
+        mod name, version, :github_tarball => options[:repo]
+    end
   end
 end
 
@@ -65,7 +69,8 @@ github "xquartz",     "1.2.1"
 github "intellij",    "1.5.1"
 github "java",        "1.6.1", :repo => "DennisDenuto/puppet-java"
 github "onepassword", "1.1.4"
-github "common-scripts", "1.0.31", :repo => "DennisDenuto/puppet-common-scripts"
+github "common-scripts", "master", :repo => "DennisDenuto/puppet-common-scripts"
+
 
 github "iterm2",      "1.1.3", :repo => "DennisDenuto/puppet-iterm2"
 github "emacs",       "1.1.0"
