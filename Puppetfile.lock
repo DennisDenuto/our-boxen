@@ -1,7 +1,7 @@
 GITHUBTARBALL
   remote: DennisDenuto/puppet-common-scripts
   specs:
-    common-scripts (1.0.31)
+    common-scripts (1.0.32)
 
 GITHUBTARBALL
   remote: DennisDenuto/puppet-gvm
@@ -229,7 +229,7 @@ DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
   chrome (= 1.1.1)
-  common-scripts (>= 0)
+  common-scripts (= 1.0.32)
   dnsmasq (= 2.0.1)
   dropbox (= 1.1.1)
   emacs (= 1.1.0)
