@@ -189,6 +189,7 @@ include android::studio
   class {'common-scripts':
        username => "${::boxen_user}",
   }
+  include networkconfig
 
 
   # limechat

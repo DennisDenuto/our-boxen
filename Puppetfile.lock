@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/DennisDenuto/puppet-networkconfig.git
+  ref: master
+  sha: 57f8a141beb78f4cd69136fbe2fca4ee8702ad8f
+  specs:
+    networkconfig (0.0.1)
+
 GITHUBTARBALL
   remote: DennisDenuto/puppet-common-scripts
   specs:
@@ -249,6 +256,7 @@ DEPENDENCIES
   maven (= 1.0.7)
   module_data (= 0.0.3)
   moom (= 0.1.6)
+  networkconfig (>= 0)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
   ohmyzsh (= 0.0.2)

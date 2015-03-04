@@ -18,7 +18,7 @@ def github(name, *args)
     version = args.first
     options[:repo] ||= "boxen/puppet-#{name}"
     if version == "master"
-        mod name, :github_tarball => options[:repo]
+        mod name, :git=> "git://github.com/#{options[:repo]}.git"
     else
         mod name, version, :github_tarball => options[:repo]
     end
@@ -28,6 +28,10 @@ end
 # Shortcut for a module under development
 def dev(name, *args)
   mod "puppet-#{name}", :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
+end
+
+def test(name, *args)
+  mod "puppet-#{name}", :path => "#{ENV['HOME']}/code/github/me/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
@@ -70,6 +74,7 @@ github "intellij",    "1.5.1"
 github "java",        "1.6.1", :repo => "DennisDenuto/puppet-java"
 github "onepassword", "1.1.4"
 github "common-scripts", "1.0.32", :repo => "DennisDenuto/puppet-common-scripts"
+github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
 
 
 github "iterm2",      "1.1.3", :repo => "DennisDenuto/puppet-iterm2"
