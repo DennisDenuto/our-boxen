@@ -163,14 +163,15 @@ include android::studio
     ]
   }
 
+  package { 'maven':
+    ensure => installed,
+  }
+
   #Intellij
   class {'intellij':
          edition => 'ultimate',
          version => '14.0.3'
   }
-
-  # Maven
-  include maven
 
   # gvm
   include gvm
@@ -189,8 +190,15 @@ include android::studio
   class {'common-scripts':
        username => "${::boxen_user}",
   }
-  include networkconfig
 
+  case $boxen_user {
+    'dennis.leon':          {
+      include answers
+    }
+    default:            {
+      include networkconfig
+    }
+  }
 
   # limechat
   include limechat
