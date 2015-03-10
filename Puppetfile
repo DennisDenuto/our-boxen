@@ -77,7 +77,7 @@ github "common-scripts", "1.0.32", :repo => "DennisDenuto/puppet-common-scripts"
 github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
 
 
-github "iterm2",      "1.1.3", :repo => "DennisDenuto/puppet-iterm2"
+github "iterm2",      "1.2.4.1", :repo => "DennisDenuto/puppet-iterm2"
 github "emacs",       "1.1.0"
 github "osx",         "1.6.0"
 
