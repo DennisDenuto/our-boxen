@@ -51,6 +51,11 @@ GITHUBTARBALL
     tmux (0.0.2)
 
 GITHUBTARBALL
+  remote: anthonywu/puppet-oracle-sqldeveloper
+  specs:
+    oracle_sqldeveloper (0.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-android
   specs:
     android (1.4.0)
@@ -262,6 +267,7 @@ DEPENDENCIES
   ohmyzsh (= 0.0.2)
   onepassword (= 1.1.4)
   openssl (= 1.0.0)
+  oracle_sqldeveloper (= 0.0.3)
   osx (= 1.6.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
