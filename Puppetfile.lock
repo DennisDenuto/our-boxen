@@ -5,15 +5,10 @@ GIT
   specs:
     networkconfig (0.0.1)
 
-PATH
-  remote: /Users/dennis.leon/src/boxen/puppet-answers
-  specs:
-    puppet-answers (0.0.1)
-
 GITHUBTARBALL
   remote: DennisDenuto/puppet-common-scripts
   specs:
-    common-scripts (1.0.33)
+    common-scripts (1.0.37)
 
 GITHUBTARBALL
   remote: DennisDenuto/puppet-gvm
@@ -241,7 +236,7 @@ DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
   chrome (= 1.1.1)
-  common-scripts (= 1.0.33)
+  common-scripts (= 1.0.37)
   dnsmasq (= 2.0.1)
   dropbox (= 1.1.1)
   emacs (= 1.1.0)
@@ -270,7 +265,6 @@ DEPENDENCIES
   osx (= 1.6.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
-  puppet-answers (>= 0)
   python (= 2.0.0)
   repository (= 2.3.0)
   ruby (= 8.1.7)

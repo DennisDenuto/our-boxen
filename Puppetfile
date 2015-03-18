@@ -73,9 +73,9 @@ github "xquartz",     "1.2.1"
 github "intellij",    "1.5.1"
 github "java",        "1.6.1", :repo => "DennisDenuto/puppet-java"
 github "onepassword", "1.1.4"
-github "common-scripts", "1.0.34", :repo => "DennisDenuto/puppet-common-scripts"
+github "common-scripts", "1.0.37", :repo => "DennisDenuto/puppet-common-scripts"
 github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
-dev "answers"
+# dev "answers"
 
 
 github "iterm2",      "1.2.4.1", :repo => "DennisDenuto/puppet-iterm2"
