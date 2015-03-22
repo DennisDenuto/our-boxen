@@ -175,14 +175,19 @@ include android::studio
 
   # gvm
   include gvm
+  gvm::groovy { '2.4.2': 
+    version => '2.4.2' }
   gvm::groovy { '2.2.2': 
-    version => '2.2.2' }
+    version => '2.2.2',
+    default => false
+  }
   gvm::groovy { '2.3.1':
     version => '2.3.1',
     default => false
   }
   gvm::grails { '2.4.0': }
   gvm::gradle { '1.12': }
+  gvm::gradle { '2.3': }
   gvm::springboot { '1.1.4.RELEASE': }
 
 
