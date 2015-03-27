@@ -173,6 +173,9 @@ exec { "set-ohmyzsh-config-zshrc":
          version => '14.0.3'
   }
 
+  #Slate
+  include slate
+
   # gvm
   include gvm
   gvm::groovy { '2.4.2': 
