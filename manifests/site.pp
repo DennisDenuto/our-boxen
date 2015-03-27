@@ -86,7 +86,7 @@ exec { "set-ohmyzsh-config-zshrc":
 
 
   #Additional
-  #include java
+  include java
   include onepassword
   include onepassword::chrome
   include ruby
@@ -113,25 +113,25 @@ exec { "set-ohmyzsh-config-zshrc":
   #  license => 'puppet:///modules/people/joe/licenses/fusion.lic',
   #}
 
-#android
-include android::sdk
-include android::ndk
-include android::tools
-include android::platform_tools
-android::build_tools { '18.1.1': }
-android::build_tools { '20': }
-android::build_tools { '21': }
-android::build_tools { '21.0.1': }
-android::build_tools { '21.1.2': }
-android::build_tools { '21.1.1': }
-include android::17
-include android::18
-include android::19
-include android::20
-android::system_image { 'sysimg-18': }
-include android::doc
-include android::studio
-  
+  #android
+  include android::sdk
+  include android::ndk
+  include android::tools
+  include android::platform_tools
+  android::build_tools { '18.1.1': }
+  android::build_tools { '20': }
+  android::build_tools { '21': }
+  android::build_tools { '21.0.1': }
+  android::build_tools { '21.1.2': }
+  android::build_tools { '21.1.1': }
+  include android::17
+  include android::18
+  include android::19
+  include android::20
+  android::system_image { 'sysimg-18': }
+  include android::doc
+  include android::studio
+
   package { 'sudolikeaboss': }
   package { 'scala': }
   package { 'sbt': }
@@ -144,7 +144,7 @@ include android::studio
 
   package { 'chrome-cli': }
   package { 'openvpn': }
- 
+
   #fix tmux copy/paste https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
   package { 'reattach-to-user-namespace': }
 
