@@ -195,7 +195,7 @@ exec { "set-ohmyzsh-config-zshrc":
 
 
   # My Config
-  class {'common-scripts':
+  class {'commonscripts':
        username => "${::boxen_user}",
   }
 
