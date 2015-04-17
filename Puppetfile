@@ -77,8 +77,9 @@ github "java",        "1.8.2"
 github "onepassword", "1.1.4"
 #
 github "commonscripts", "1.1", :repo => "DennisDenuto/puppet-commonscripts"
-
 github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
+
+github "appstore", "0.0.6", :repo => "xdissent/puppet-appstore"
 mod 'oracle_sqldeveloper', '0.0.3', :github_tarball => "anthonywu/puppet-oracle-sqldeveloper"
 dev "parallels"
 dev "answers"
