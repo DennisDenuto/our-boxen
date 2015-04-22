@@ -71,12 +71,11 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 #
 github "intellij",    "1.5.1"
-# github "java",        "1.6.1", :repo => "DennisDenuto/puppet-java"
 github "java",        "1.8.2"
 
 github "onepassword", "1.1.4"
 #
-github "commonscripts", "1.1", :repo => "DennisDenuto/puppet-commonscripts"
+github "commonscripts", "1.2", :repo => "DennisDenuto/puppet-commonscripts"
 github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
 
 github "appstore", "0.0.6", :repo => "xdissent/puppet-appstore"

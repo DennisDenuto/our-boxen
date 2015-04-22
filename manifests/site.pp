@@ -61,8 +61,10 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
 
+
   homebrew::tap { 'homebrew/binary': }
   homebrew::tap { 'ravenac95/sudolikeaboss': }
+
 
   # core modules, needed for most things
   include dnsmasq
@@ -231,6 +233,7 @@ exec { "set-ohmyzsh-config-zshrc":
       'boot2docker',
       'docker-compose',
       'docker-machine',
+      'docker-swarm',
       'grc'
     ]:
   }
