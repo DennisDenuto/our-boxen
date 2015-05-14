@@ -106,7 +106,7 @@ github "firefox",      "1.2.2"
 
 github "dropbox",     "1.1.1"
 
-github "virtualbox",  "1.0.10"
+github "virtualbox",  "1.0.13"
 github "vagrant",     "3.2.0"
 github "android",     "1.4.0"
 github "vmware_fusion",     "1.2.0"

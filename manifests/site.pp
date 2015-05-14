@@ -158,6 +158,7 @@ exec { "set-ohmyzsh-config-zshrc":
   }
 
   package { 'packer': }
+  package { 'consul': }
 
   package { 'macvim':
     install_options => [
