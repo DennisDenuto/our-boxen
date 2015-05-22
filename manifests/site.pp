@@ -64,6 +64,7 @@ node default {
 
   homebrew::tap { 'homebrew/binary': }
   homebrew::tap { 'ravenac95/sudolikeaboss': }
+  homebrew::tap { 'homebrew/php': }
 
 
   # core modules, needed for most things
@@ -236,7 +237,8 @@ exec { "set-ohmyzsh-config-zshrc":
       'docker-compose',
       'docker-machine',
       'docker-swarm',
-      'grc'
+      'grc',
+      'phpunit'
     ]:
   }
 
