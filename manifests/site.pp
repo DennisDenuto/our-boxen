@@ -135,6 +135,7 @@ exec { "set-ohmyzsh-config-zshrc":
   include android::doc
   include android::studio
 
+  package { 'mutt': }
   package { 'sudolikeaboss': }
   package { 'scala': }
   package { 'sbt': }
