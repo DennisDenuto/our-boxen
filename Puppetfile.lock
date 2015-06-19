@@ -18,7 +18,7 @@ PATH
 GITHUBTARBALL
   remote: DennisDenuto/puppet-commonscripts
   specs:
-    commonscripts (1.2.2)
+    commonscripts (1.2.3)
 
 GITHUBTARBALL
   remote: DennisDenuto/puppet-gvm
@@ -262,7 +262,7 @@ DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
   chrome (= 1.1.1)
-  commonscripts (= 1.2.2)
+  commonscripts (= 1.2.3)
   dnsmasq (= 2.0.1)
   dropbox (= 1.1.1)
   emacs (= 1.1.0)
