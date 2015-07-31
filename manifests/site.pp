@@ -183,6 +183,9 @@ exec { "set-ohmyzsh-config-zshrc":
   #Slate
   include slate
 
+  #Wireshark
+  include wireshark
+
   # gvm
   include gvm
   gvm::groovy { '2.4.2': 
