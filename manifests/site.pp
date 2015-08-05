@@ -237,7 +237,6 @@ exec { "set-ohmyzsh-config-zshrc":
       'git-flow',
       'git-extras',
       'docker',
-      'boot2docker',
       'docker-compose',
       'docker-machine',
       'docker-swarm',
