@@ -73,7 +73,7 @@ github "xquartz",     "1.2.1"
 github "intellij",    "1.5.1"
 github "java",        "1.8.2"
 
-github "onepassword", "1.1.4"
+github "onepassword", "1.1.5"
 #
 github "commonscripts", "1.2.7", :repo => "DennisDenuto/puppet-commonscripts"
 
@@ -101,7 +101,7 @@ github "tmux",        "0.0.2", :repo => "DennisDenuto/puppet-tmux"
 
 github "wget",        "1.0.0"
 
-github "chrome",      "1.1.1"
+github "chrome",      "1.2.0"
 github "firefox",      "1.2.2"
 
 github "dropbox",     "1.1.1"

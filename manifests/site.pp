@@ -100,7 +100,6 @@ exec { "set-ohmyzsh-config-zshrc":
 
   include chrome
   include firefox
-  include chrome::dev
   include dropbox
   include virtualbox
 
