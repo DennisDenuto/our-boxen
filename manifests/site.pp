@@ -251,9 +251,9 @@ exec { "set-ohmyzsh-config-zshrc":
   }
 
   # node versions
-  nodejs::version { 'v0.6': }
-  nodejs::version { 'v0.8': }
-  nodejs::version { 'v0.10': }
+  nodejs::version { '0.6': }
+  nodejs::version { '0.8': }
+  nodejs::version { '0.10': }
 
   # install some npm modules
    nodejs::module { 'appium':
