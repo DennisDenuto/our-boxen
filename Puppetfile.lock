@@ -63,7 +63,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.11.0)
+    boxen (3.11.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
@@ -264,7 +264,7 @@ DEPENDENCIES
   android (= 1.4.0)
   appstore (= 0.0.6)
   autojump (= 1.0.0)
-  boxen (= 3.11.0)
+  boxen (= 3.11.1)
   brewcask (= 0.0.6)
   chrome (= 1.2.0)
   commonscripts (= 1.2.7)
