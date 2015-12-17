@@ -62,7 +62,7 @@ github "phantomjs",   "2.3.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
 github "ruby",        "8.1.7"
-github "python",      "2.0.0"
+github "python",      "2.0.1"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
@@ -84,8 +84,7 @@ mod 'oracle_sqldeveloper', '0.0.3', :github_tarball => "anthonywu/puppet-oracle-
 dev "parallels"
 dev "answers"
 
-
-
+github "awsshell",      "1.0.1", :repo => "DennisDenuto/puppet-awsshell"
 github "iterm2",      "1.2.4.1", :repo => "DennisDenuto/puppet-iterm2"
 github "emacs",       "1.1.0"
 github "osx",         "1.6.0"

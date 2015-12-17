@@ -11,6 +11,11 @@ PATH
     puppet-answers (0.0.1)
 
 PATH
+  remote: /Users/dennis.leon/src/boxen/puppet-awsshell
+  specs:
+    puppet-awsshell (0.0.1)
+
+PATH
   remote: /Users/dennis.leon/src/boxen/puppet-parallels
   specs:
     puppet-parallels (0.0.1)
@@ -18,7 +23,7 @@ PATH
 GITHUBTARBALL
   remote: DennisDenuto/puppet-commonscripts
   specs:
-    commonscripts (1.2.6)
+    commonscripts (1.2.7)
 
 GITHUBTARBALL
   remote: DennisDenuto/puppet-gvm
@@ -29,21 +34,6 @@ GITHUBTARBALL
   remote: DennisDenuto/puppet-iterm2
   specs:
     iterm2 (1.2.4.1)
-
-GITHUBTARBALL
-  remote: DennisDenuto/puppet-limechat
-  specs:
-    limechat (1.1.0)
-
-GITHUBTARBALL
-  remote: DennisDenuto/puppet-maven
-  specs:
-    maven (1.0.7)
-
-GITHUBTARBALL
-  remote: DennisDenuto/puppet-moom
-  specs:
-    moom (0.1.6)
 
 GITHUBTARBALL
   remote: DennisDenuto/puppet-ohmyzsh
@@ -83,7 +73,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
-    chrome (1.1.1)
+    chrome (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -158,7 +148,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.1.4)
+    onepassword (1.1.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -183,7 +173,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-python
   specs:
-    python (2.0.0)
+    python (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -241,6 +231,11 @@ GITHUBTARBALL
     wireshark (1.1.0)
 
 GITHUBTARBALL
+  remote: mozilla-boxen/puppet-limechat
+  specs:
+    limechat (1.1.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.1)
@@ -256,6 +251,11 @@ GITHUBTARBALL
     module_data (0.0.3)
 
 GITHUBTARBALL
+  remote: steinim/puppet-maven
+  specs:
+    maven (1.0.7)
+
+GITHUBTARBALL
   remote: xdissent/puppet-appstore
   specs:
     appstore (0.0.6)
@@ -266,8 +266,8 @@ DEPENDENCIES
   autojump (= 1.0.0)
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
-  chrome (= 1.1.1)
-  commonscripts (= 1.2.6)
+  chrome (= 1.2.0)
+  commonscripts (= 1.2.7)
   dnsmasq (= 2.0.1)
   dropbox (= 1.1.1)
   emacs (= 1.1.0)
@@ -286,20 +286,20 @@ DEPENDENCIES
   limechat (= 1.1.0)
   maven (= 1.0.7)
   module_data (= 0.0.3)
-  moom (= 0.1.6)
   networkconfig (>= 0)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
   ohmyzsh (= 0.0.2)
-  onepassword (= 1.1.4)
+  onepassword (= 1.1.5)
   openssl (= 1.0.0)
   oracle_sqldeveloper (= 0.0.3)
   osx (= 1.6.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   puppet-answers (>= 0)
+  puppet-awsshell (>= 0)
   puppet-parallels (>= 0)
-  python (= 2.0.0)
+  python (= 2.0.1)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   slate (= 1.0.1)

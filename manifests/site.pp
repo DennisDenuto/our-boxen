@@ -95,6 +95,9 @@ exec { "set-ohmyzsh-config-zshrc":
   include onepassword::chrome
   include ruby
   include python
+
+  class { 'awsshell': }
+
   package { 'awscli': }
   package { 'hg': }
 
