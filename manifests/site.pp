@@ -239,6 +239,7 @@ exec { "set-ohmyzsh-config-zshrc":
       'direnv',
       'git-flow',
       'git-extras',
+      'htop'
       'docker',
       'docker-compose',
       'docker-machine',
