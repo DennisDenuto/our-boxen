@@ -240,6 +240,7 @@ exec { "set-ohmyzsh-config-zshrc":
       'git-flow',
       'git-extras',
       'htop'
+      'jq'
       'docker',
       'docker-compose',
       'docker-machine',
