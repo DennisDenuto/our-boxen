@@ -75,7 +75,7 @@ github "java",        "1.8.2"
 
 github "onepassword", "1.1.5"
 #
-github "commonscripts", "1.2.7", :repo => "DennisDenuto/puppet-commonscripts"
+github "commonscripts", "1.2.8", :repo => "DennisDenuto/puppet-commonscripts"
 
 github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
 
