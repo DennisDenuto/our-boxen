@@ -68,7 +68,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.6)
+    brewcask (0.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -265,7 +265,6 @@ DEPENDENCIES
   appstore (= 0.0.6)
   autojump (= 1.0.0)
   boxen (= 3.11.1)
-  brewcask (= 0.0.6)
   chrome (= 1.2.0)
   commonscripts (= 1.2.7)
   dnsmasq (= 2.0.1)
@@ -276,8 +275,6 @@ DEPENDENCIES
   gcc (= 3.0.2)
   git (= 2.9.0)
   go (= 2.1.0)
-<<<<<<< 3606b2bf1d796c8bab73fdfa4ef8868c1ef21b51
-<<<<<<< 6ed1d9ae41874906535bb81b6de1af000fde6d3b
   gvm (= 1.0.2)
   homebrew (= 1.12.0)
   hub (= 1.4.1)
@@ -328,4 +325,3 @@ DEPENDENCIES
   wireshark (= 1.1.0)
   xquartz (= 1.2.1)
   zsh (= 1.0.0)
-
