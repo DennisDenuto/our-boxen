@@ -172,16 +172,11 @@ exec { "set-ohmyzsh-config-zshrc":
     ]
   }
 
-  package { 'maven':
-    ensure => installed,
-  }
-
   #Intellij
   class {'intellij':
          edition => 'ultimate',
          version => '14.0.3'
   }
-
 
   #Slate
   include slate
@@ -207,27 +202,6 @@ exec { "set-ohmyzsh-config-zshrc":
   gvm::springboot { '1.1.4.RELEASE': }
 
 
-  # My Config
-  class {'commonscripts':
-       username => "${::boxen_user}",
-  }
-
-  case $boxen_user {
-    'dennis.leon':          {
-      include answers
-    }
-    default:            {
-      include networkconfig
-    }
-  }
-
-  # limechat
-  include limechat
-  
-  # mysql
-#  include mysql
-#  mysql::db { 'development_db': }
-
   # additional homebrew packages
   package {
     [
@@ -239,31 +213,14 @@ exec { "set-ohmyzsh-config-zshrc":
       'direnv',
       'git-flow',
       'git-extras',
-      'htop'
-      'jq'
+      'htop',
+      'jq',
       'docker',
       'docker-compose',
       'docker-machine',
       'docker-swarm',
-      'grc',
-      'phpunit'
+      'grc'
     ]:
-  }
-
-  # node versions
-  nodejs::version { '0.8': }
-  nodejs::version { '0.10': }
-  nodejs::version { '0.12': }
-
-  # install some npm modules
-   nodejs::module { 'appium':
-    node_version => 'v0.10'
-  }
-   nodejs::module { 'jsonlint':
-    node_version => 'v0.10'
-  }
-   nodejs::module { 'bower': 
-    node_version => 'v0.10'
   }
 
   # default ruby versions

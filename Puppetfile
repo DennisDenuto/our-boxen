@@ -69,21 +69,14 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-<<<<<<< 57af36ec9003a9069af74f65b7132077f227bd37
 #
 github "intellij",    "1.5.1"
 github "java",        "1.8.2"
 
 github "onepassword", "1.1.5"
 #
-github "commonscripts", "1.2.8", :repo => "DennisDenuto/puppet-commonscripts"
-
-github "networkconfig", "master", :repo => "DennisDenuto/puppet-networkconfig"
 
 github "appstore", "0.0.6", :repo => "xdissent/puppet-appstore"
-mod 'oracle_sqldeveloper', '0.0.3', :github_tarball => "anthonywu/puppet-oracle-sqldeveloper"
-dev "parallels"
-dev "answers"
 
 github "awsshell",      "1.0.1", :repo => "DennisDenuto/puppet-awsshell"
 github "iterm2",      "1.2.4.1", :repo => "DennisDenuto/puppet-iterm2"
@@ -93,11 +86,10 @@ github "osx",         "1.6.0"
 
 github "ohmyzsh",         "0.0.2", :repo => "DennisDenuto/puppet-ohmyzsh"
 github "limechat",         "1.1.0", :repo => "mozilla-boxen/puppet-limechat"
-github "maven",         "1.0.7", :repo => "steinim/puppet-maven"
 github "gvm",         "1.0.2", :repo => "DennisDenuto/puppet-gvm"
 github "zsh",         "1.0.0"
 github "autojump",    "1.0.0"
-github "tmux",        "0.0.2", :repo => "DennisDenuto/puppet-tmux"
+github "tmux",        "1.0.0", :repo => "DennisDenuto/puppet-tmux"
 
 github "wget",        "1.0.0"
 
