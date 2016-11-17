@@ -69,7 +69,6 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-<<<<<<< 57af36ec9003a9069af74f65b7132077f227bd37
 #
 github "intellij",    "1.5.1"
 github "java",        "1.8.2"
