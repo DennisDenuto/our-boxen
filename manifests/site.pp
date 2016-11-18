@@ -102,6 +102,7 @@ exec { "set-ohmyzsh-config-zshrc":
   package { 'awscli': }
   package { 'hg': }
   package { 'spectacle': provider => 'brewcask' }
+  package { 'flycut': provider => 'brewcask' }
 
   include chrome
   include firefox
