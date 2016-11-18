@@ -1,5 +1,6 @@
 require boxen::environment
 require homebrew
+include brewcask
 require gcc
 
 Exec {
@@ -100,6 +101,7 @@ exec { "set-ohmyzsh-config-zshrc":
 
   package { 'awscli': }
   package { 'hg': }
+  package { 'spectacle': provider => 'brewcask' }
 
   include chrome
   include firefox
@@ -109,7 +111,6 @@ exec { "set-ohmyzsh-config-zshrc":
   class { 'vmware_fusion': version => '7.0.0-2103067' }
   #license: QZKH1-G1PNZ-44JWD-2U4G1-VC533
 
-  package { 'typesafe-activator': }
 
   #vagrant setup
   class { 'vagrant':
@@ -119,29 +120,10 @@ exec { "set-ohmyzsh-config-zshrc":
   #  license => 'puppet:///modules/people/joe/licenses/fusion.lic',
   #}
 
-  #android
-  include android::sdk
-  include android::ndk
-  include android::tools
-  include android::platform_tools
-  android::build_tools { '18.1.1': }
-  android::build_tools { '20': }
-  android::build_tools { '21': }
-  android::build_tools { '21.0.1': }
-  android::build_tools { '21.1.2': }
-  android::build_tools { '21.1.1': }
-  include android::17
-  include android::18
-  include android::19
-  include android::20
-  android::system_image { 'sysimg-18': }
-  include android::doc
-  include android::studio
 
   package { 'coreutils': }
   package { 'mutt': }
   package { 'sudolikeaboss': }
-  package { 'scala': }
   package { 'sbt': }
   package { 'mercurial': }
   #jad = decompiler
@@ -163,44 +145,12 @@ exec { "set-ohmyzsh-config-zshrc":
   }
 
   package { 'packer': }
-  package { 'consul': }
-
-  package { 'macvim':
-    install_options => [
-      '--with-cscope',
-      '--override-system-vim',
-    ]
-  }
-
-  #Intellij
-  class {'intellij':
-         edition => 'ultimate',
-         version => '14.0.3'
-  }
 
   #Slate
   include slate
 
   #Wireshark
   include wireshark
-
-  # gvm
-  include gvm
-  gvm::groovy { '2.4.2': 
-    version => '2.4.2' }
-  gvm::groovy { '2.2.2': 
-    version => '2.2.2',
-    default => false
-  }
-  gvm::groovy { '2.3.1':
-    version => '2.3.1',
-    default => false
-  }
-  gvm::grails { '2.4.0': }
-  gvm::gradle { '1.12': }
-  gvm::gradle { '2.3': }
-  gvm::springboot { '1.1.4.RELEASE': }
-
 
   # additional homebrew packages
   package {
@@ -232,6 +182,7 @@ exec { "set-ohmyzsh-config-zshrc":
   # common, useful packages
   package {
     [
+      'ag',
       'ack',
       'findutils',
       'gnu-tar'

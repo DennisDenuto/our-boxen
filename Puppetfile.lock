@@ -24,11 +24,6 @@ GITHUBTARBALL
     tmux (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-android
-  specs:
-    android (1.4.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-autojump
   specs:
     autojump (1.0.0)
@@ -229,7 +224,6 @@ GITHUBTARBALL
     appstore (0.0.6)
 
 DEPENDENCIES
-  android (= 1.4.0)
   appstore (= 0.0.6)
   autojump (= 1.0.0)
   awsshell (= 1.0.1)
