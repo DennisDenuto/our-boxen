@@ -64,6 +64,7 @@ node default {
 
 
   homebrew::tap { 'homebrew/binary': }
+  homebrew::tap { 'homebrew/fuse': }
   homebrew::tap { 'ravenac95/sudolikeaboss': }
   homebrew::tap { 'homebrew/php': }
 
@@ -122,6 +123,7 @@ exec { "set-ohmyzsh-config-zshrc":
   #}
 
 
+  package { 'Caskroom/cask/osxfuse'; }
   package { 'coreutils': }
   package { 'mutt': }
   package { 'sudolikeaboss': }
